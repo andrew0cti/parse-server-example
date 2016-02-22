@@ -30,7 +30,7 @@ app.use(mountPath, api);
 //ACB app.get('/', function(req, res) {
 //ACB   res.status(200).send('I dream of being a web site.');
 //ACB });
-app.get(express.static(__dirname + '/Public'));
+app.get(express.static(__dirname + '/public'));
 
 var port = process.env.PORT || 1337;
 app.listen(port, function() {
